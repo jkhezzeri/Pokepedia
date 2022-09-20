@@ -1,0 +1,282 @@
+
+/* Formulaire pour rentrer un nouveau pokémon dans la base de données */
+form {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+    margin: 20px;
+    font-size: 15px;
+}
+label {
+    background-color: blue;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    padding-left: 2px;
+    box-sizing: border-box;
+}
+
+/* Champs de saisie de texte du formulaire */
+input[type=text] {
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 38px;
+    float: left;
+    padding: 0 5px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: "Flexo DemiBold";
+}
+input[type="text"]::placeholder {
+    text-align: center;
+    /* opacity: 1; */
+}
+.form_very_small_box input {
+    text-align: center;
+}
+#form_height_value, #form_weight_value {
+    width: 74px;
+    height: 38px;
+    text-align: center;
+    text-transform: none;
+}
+textarea {
+    resize: none;
+    width: 320px;
+    height: 58px;
+    float: left;
+    background-color: rgb(246, 246, 246);
+    padding: 5px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+    font-family: "Flexo DemiBold";
+}
+.form_very_big textarea {
+    width: 220px;
+    height: 158px;
+}
+
+/* Taille des informations du formulaire (avec label) */
+.form_normal {
+    background-color: green;
+    width: 380px;
+    height: 60px;
+    float: left;
+    grid-column: span 4;
+}
+.form_small {
+    background-color: orange;
+    width: 170px;
+    height: 60px;
+    float: left;
+    grid-column: span 2;
+}
+.form_very_small {
+    background-color: pink;
+    width: 65px;
+    height: 60px;
+    float: left;
+}
+.form_big {
+    background-color: purple;
+    width: 380px;
+    height: 80px;
+    float: left;
+    grid-column: span 4;
+}
+.form_very_big {
+    background-color: yellow;
+    width: 380px;
+    height: 180px;
+    float: left;
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+/* Taille des informations du formulaire (sans label) */
+.form_normal_box {
+    background-color: rgb(191, 191, 191);
+    width: 380px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+.form_small_box {
+    background-color: rgb(191, 191, 191);
+    width: 170px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+.form_very_small_box {
+    background-color: rgb(191, 191, 191);
+    width: 65px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+.form_big_box {
+    background-color: rgb(191, 191, 191);
+    width: 380px;
+    height: 60px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+.form_very_big_box {
+    background-color: rgb(191, 191, 191);
+    width: 380px;
+    height: 160px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+
+/* Bouton des informations du formulaire */
+.form_button {
+    background-color: rgb(246, 246, 246);
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+.form_button:hover {
+    background-color: rgb(191, 191, 191);
+    cursor: pointer;
+}
+
+/* Image du nouveau pokémon */
+.form_very_big img {
+    background-color: rgb(246, 246, 246);
+    width: 158px;
+    height: 158px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+
+/* Miniature et Chromatique du nouveau pokémon */
+.form_big img {
+    background-color: rgb(246, 246, 246);
+    width: 58px;
+    height: 58px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+
+/* Type(s) du nouveau pokémon */
+#form_first_type, #form_second_type {
+    position: relative;
+}
+
+/* Type(s) choisi(s) du nouveau pokémon */
+.form_type_selected {
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 38px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Liste des types */
+.form_list_types {
+    background-color: rgb(191, 191, 191);
+    width: 100%;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 0 0 5px 5px;
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 37px;
+}
+.form_list_types li {
+    background-color: rgb(246, 246, 246);
+    width: 50%;
+    height: 38px;
+    line-height: 36px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form_list_types li:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+/* Évolution du nouveau pokémon */
+.form_evolution_box {
+    background-color: rgb(191, 191, 191);
+    width: 170px;
+    height: 38px;
+    line-height: 36px;
+    float: left;
+    position: relative;
+}
+
+/* Liste des pokémon existant pour la partie Évolution */
+#form_evolution_list {
+    background-color: rgb(191, 191, 191);
+    width: 100%;
+    max-height: 170px;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 0 0 5px 5px;
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 37px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+/* Navigateur autre que Firefox */
+#form_evolution_list::-webkit-scrollbar {
+    display: none;
+}
+#form_evolution_list li {
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 5px;
+    cursor: pointer;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#form_evolution_list li:hover {
+    background-color: rgb(191, 191, 191);
+}

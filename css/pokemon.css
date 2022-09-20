@@ -1,0 +1,321 @@
+
+/* Section du menu pour accéder aux pokémon précédent et suivant */
+#pokemon_pagination {
+    width: 1200px;
+    height: 80px;
+    margin: 30px auto;
+}
+.pokemon_page {
+    width: 400px;
+    height: 80px;
+    float: left;
+    font-size: 15px;
+    line-height: 80px;
+}
+.pokemon_page img {
+    margin: 14px;
+}
+
+/* Pokémon précédent et suivant */
+#pokemon_previous, #pokemon_next {
+    background-color: rgb(222, 222, 222);
+}
+#pokemon_previous:hover, #pokemon_next:hover {
+    background-color: rgb(191, 191, 191);
+}
+#pokemon_previous div, #pokemon_previous img, #pokemon_current img {
+    float: left;
+}
+#pokemon_next div, #pokemon_next img {
+    float: right;
+}
+.pokemon_pagination_arrow {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.pokemon_pagination_number {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.pokemon_pagination_name {
+    width: 160px;
+    height: 80px;
+    text-align: center;
+}
+
+/* Pokémon actuel */
+.pokemon_current_number {
+    width: 160px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+.pokemon_current_name {
+    width: 160px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+
+/* Section des informations du pokémon */
+#pokemon_infos {
+    background-color: rgb(191, 191, 191);
+    width: 1200px;
+    height: 400px;
+    margin: 30px auto;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+
+/* Image du pokémon */
+#pokemon_infos>img{
+    background-color: rgb(246, 246, 246);
+    width: 364px;
+    height: 364px;
+    display: block;
+    float: left;
+    padding: 15px 19px;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+/* Colonne des informations du pokémon */
+.pokemon_infos_column {
+    background-color: rgb(191, 191, 191);
+    width: 396px;
+    height: 396px;
+    float: left;
+    border-radius: 5px;
+}
+
+/* Ligne des informations du pokémon */
+.pokemon_info_row {
+    background-color: rgb(246, 246, 246);
+    width: 396px;
+    height: 44px;
+    line-height: 42px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Information du pokémon */
+.pokemon_info_title {
+    background-color: rgb(222, 222, 222);
+    float: left;
+    width: 110px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+.pokemon_info_result {
+    float: left;
+    width: 284px;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    line-height: 20px;
+}
+.pokemon_info_result>img {
+    width: 42px;
+    height: 42px;
+}
+.pokemon_info_cell {
+    background-color: rgb(246, 246, 246);
+    width: 198px;
+    height: 88px;
+    line-height: 86px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    box-sizing: border-box;
+    text-align: center;
+}
+.pokemon_info_image {
+    float: left;
+    width: 86px;
+    height: 86px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokemon_info_image>img {
+    max-width: 86px;
+    max-height: 86px;
+}
+
+/* Section du tableau des sensibilités du pokémon */
+table, th, td {
+    border: 1px solid rgb(191, 191, 191);
+}
+table {
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: rgb(191, 191, 191);
+    border-radius: 5px;
+    border-spacing: 0px;
+    margin: 30px auto;
+}
+
+/* Cellule du tableau des sensibilités */
+td {
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* Titre du tableau des sensibilités */
+.pokemon_chart_title {
+    position: relative;
+}
+.pokemon_chart_name {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    color: white;
+    z-index: 10;
+    position: absolute;
+}
+.pokemon_chart_first_type {
+    width: 100%;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+    float: left;
+}
+.pokemon_chart_first_type img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.pokemon_chart_first_type div {
+    float: left;
+}
+.pokemon_chart_second_type {
+    width: 50%;
+    color: white;
+    line-height: 30px;
+    border-radius: 0 5px 5px 0;
+    float: right;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    /* transform: skew(-45deg); */
+}
+.pokemon_chart_second_type img {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.pokemon_chart_second_type div {
+    float: right;
+}
+
+/* Image du pokémon */
+.pokemon_chart_image {
+    background-color: rgb(255, 255, 255);
+}
+.pokemon_chart_image img {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: auto;
+}
+
+/* Types offensifs */
+.chart_type {
+    width: 60px;
+    height: 40px;
+}
+.chart_type a {
+    width: 100%;
+    height: 100%;
+}
+.chart_type img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 3px;
+    object-fit: contain;
+}
+.chart_type div {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    position: relative;
+    top: 2px;
+}
+
+/* Légende du tableau des sensibilités */
+.pokemon_chart_legend_title {
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.pokemon_chart_legend_name {
+    background-color: rgb(246, 246, 246);
+    font-size: 12px;
+}
+
+/* Page du pokémon quand la fenêtre est de petite taille */
+@media all and (max-width: 800px) {
+
+    #pokemon_pagination {
+        width: 400px;
+    }
+
+    .pokemon_page {
+        width: 200px;
+        height: 60px;
+        line-height: 30px;
+    }
+
+    #pokemon_current {
+        display: none;
+    }
+
+    .pokemon_pagination_arrow {
+        width: 40px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .pokemon_page img {
+        margin: 4px;
+    }
+
+    .pokemon_pagination_number {
+        width: 100px;
+        height: 30px;
+    }
+
+    .pokemon_pagination_name {
+        width: 100px;
+        height: 30px;
+    }
+
+    #pokemon_infos {
+        width: 400px;
+        height: 1200px;
+    }
+
+    #pokemon_infos>img{
+        padding: 19px 15px;
+    }
+
+}

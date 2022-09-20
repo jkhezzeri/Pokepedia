@@ -1,0 +1,57 @@
+
+/* Header du site */
+header {
+    background-color: white;
+    position: fixed;
+    width: auto;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.header_container {
+    width: 1300px;
+    height: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    user-select: none;
+}
+.header_container a {
+    height: 100%;
+    line-height: 50px;
+    display: inline-block;
+    float: left;
+}
+.header_container img {
+    height: 40px;
+    padding: 5px 0;
+}
+
+/* Bouton d'accueil du site */
+#header_home {
+    margin: 0 20px;
+}
+
+/* Menu principal du site */
+#header_menu {
+    height: 100%;
+    display: inline-block;
+}
+#header_menu a {
+    padding: 0 20px;
+}
+#header_menu a:hover {
+    border-style: solid;
+	border-width: 0 0 2px;
+	border-color: red;
+    box-sizing: border-box;
+}
+
+/* Header quand la fenêtre est de petite taille */
+@media all and (max-width: 800px) {
+    .header_container {
+        font-size: 15px;
+    }
+}
